@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>董立凱 ｜ 北區升級 立凱出擊 ・ 2026 彰化市市民代表參選人</title>
+<meta name="description" content="董立凱・台灣民眾黨提名 2026 年彰化市市民代表第三選區（北區）參選人。從心出發，做北區的行動派。以安全、友善、減法三大核心理念，打造活力北區，永續共榮。">
+<meta property="og:title" content="董立凱 ｜ 北區升級 立凱出擊">
+<meta property="og:description" content="2026 彰化市市民代表・北區・台灣民眾黨提名">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============ DESIGN TOKENS ============ */
+:root {
+  --teal-deep: #0c3b3b;
+  --teal-mid: #1a6b6b;
+  --teal-bright: #2bbab2;
+  --teal-glow: #5fd8c4;
+  --cream: #f6f1e7;
+  --cream-dark: #ece4d4;
+  --paper: #fbf8f1;
+  --ink: #141618;
+  --ink-soft: #2a2d31;
+  --gold: #b88a3e;
+  --gold-light: #d4a960;
+  --rust: #b04a2e;
+  --line: rgba(20, 22, 24, 0.12);
+  --line-strong: rgba(20, 22, 24, 0.32);
+
+  --font-display-zh: "Noto Serif TC", "PMingLiU", serif;
+  --font-body-zh: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+  --font-display-en: "Fraunces", Georgia, serif;
+  --font-body-en: "Manrope", -apple-system, sans-serif;
+
+  --max: 1400px;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+}
+
+/* ============ RESET ============ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body-zh);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: none; background: none; }
+
+/* ============ PAPER GRAIN OVERLAY ============ */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+}
+
+/* ============ NAV ============ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.1rem var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(251, 248, 241, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  transition: all 0.3s ease;
+}
+.nav-brand {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.nav-brand-mark {
+  width: 32px; height: 32px;
+  background: var(--teal-deep);
+  color: var(--cream);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display-en);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: -0.02em;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.nav-links a {
+  position: relative;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 1px;
+  width: 0;
+  background: var(--teal-bright);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--teal-mid); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  padding: 0.55rem 1.3rem;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+.nav-cta:hover { background: var(--teal-deep); transform: translateY(-1px); }
+.nav-toggle { display: none; }
+
+@media (max-width: 880px) {
+  .nav-links, .nav-cta { display: none; }
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+  }
+  .nav-toggle span {
+    width: 22px;
+    height: 1.5px;
+    background: var(--ink);
+    transition: 0.3s;
+  }
+}
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 8rem var(--gutter) 4rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: linear-gradient(180deg, var(--paper) 0%, var(--cream) 100%);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 50%;
+  height: 70%;
+  background: radial-gradient(ellipse at center, rgba(43, 186, 178, 0.18), transparent 60%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 2; }
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem;
+  background: var(--teal-deep);
+  color: var(--cream);
+  font-family: var(--font-body-en);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+.hero-eyebrow-dot {
+  width: 6px; height: 6px;
+  background: var(--teal-glow);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.hero h1 {
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+.hero h1 .accent {
+  display: block;
+  color: var(--teal-deep);
+  font-style: italic;
+  font-weight: 700;
+  position: relative;
+}
+.hero h1 .accent::before {
+  content: '';
+  position: absolute;
+  left: -1.2rem;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 3px;
+  background: var(--teal-bright);
+}
+.hero-tagline {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 2.5rem 0;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+  animation: fadeUp 0.7s ease 0.4s both;
+}
+.hero-meta-item {
+  padding: 1rem 0;
+  border-right: 1px solid var(--line);
+  padding-right: 1rem;
+}
+.hero-meta-item:last-child { border-right: none; padding-left: 1rem; padding-right: 0; }
+.hero-meta-item:not(:first-child) { padding-left: 1rem; }
+.hero-meta-label {
+  font-family: var(--font-body-en);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  margin-bottom: 0.3rem;
+}
+.hero-meta-value {
+  font-family: var(--font-display-zh);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s ease 0.5s both;
+}
+.btn-primary, .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--cream);
+}
+.btn-primary:hover {
+  background: var(--teal-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(12, 59, 59, 0.4);
+}
+.btn-secondary {
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+}
+.btn-secondary:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+.btn-arrow {
+  font-family: var(--font-body-en);
+  transition: transform 0.2s;
+}
+.btn-primary:hover .btn-arrow, .btn-secondary:hover .btn-arrow { transform: translateX(4px); }
+
+/* Hero Portrait */
+.hero-portrait {
+  position: relative;
+  z-index: 2;
+  animation: fadeUp 0.8s ease 0.4s both;
+}
+.hero-portrait-frame {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: var(--teal-deep);
+  overflow: hidden;
+  box-shadow: 0 30px 60px -20px rgba(12, 59, 59, 0.35);
+}
+.hero-portrait-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.hero-portrait-tag {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -1.5rem;
+  background: var(--cream);
+  border: 1px solid var(--ink);
+  padding: 1rem 1.5rem;
+  z-index: 3;
+  max-width: 240px;
+}
+.hero-portrait-tag-num {
+  font-family: var(--font-display-en);
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--teal-deep);
+  line-height: 1;
+}
+.hero-portrait-tag-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+.hero-portrait-stamp {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 110px;
+  height: 110px;
+  background: var(--gold);
+  color: var(--cream);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  z-index: 3;
+  transform: rotate(8deg);
+  box-shadow: 0 8px 20px -6px rgba(184, 138, 62, 0.5);
+}
+
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 6.5rem;
+    min-height: auto;
+  }
+  .hero-portrait { order: -1; max-width: 380px; margin: 0 auto; }
+  .hero-meta { grid-template-columns: repeat(3, 1fr); }
+  .hero-meta-label { font-size: 0.55rem; }
+  .hero-meta-value { font-size: 0.85rem; }
+}
+
+/* ============ MARQUEE ============ */
+.marquee {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 1.2rem 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 35s linear infinite;
+  font-family: var(--font-display-zh);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+}
+.marquee-item {
+  padding: 0 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+.marquee-star {
+  color: var(--teal-bright);
+  font-size: 0.8rem;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ============ SECTION COMMONS ============ */
+.section {
+  padding: 7rem var(--gutter);
+  position: relative;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.section-num {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--teal-deep);
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.section-num::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--teal-deep);
+}
+.section-title {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 1.2rem;
+}
+.section-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--teal-deep);
+  font-family: var(--font-display-zh);
+}
+.section-lead {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin-bottom: 4rem;
+}
+
+/* ============ ABOUT ============ */
+.about {
+  background: var(--cream);
+  padding: 7rem var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.about::before {
+  content: '立';
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: 30rem;
+  color: var(--cream-dark);
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+.about-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about-side {
+  position: sticky;
+  top: 6rem;
+}
+.about-quote {
+  font-family: var(--font-display-zh);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--teal-deep);
+  border-left: 3px solid var(--teal-bright);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+.about-attribution {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.about-sig {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.about-sig strong {
+  display: block;
+  font-family: var(--font-display-zh);
+  font-style: normal;
+  font-size: 1.1rem;
+  color: var(--ink);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.about-body p {
+  margin-bottom: 1.4rem;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+.about-body p strong { color: var(--ink); font-weight: 700; }
+.about-body p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 0.9;
+  margin: 0.3rem 0.6rem 0 0;
+  color: var(--teal-deep);
+}
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  margin-top: 3rem;
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
+}
+.about-stat {
+  padding: 1.5rem;
+  border-right: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+.about-stat-num {
+  font-family: var(--font-display-en);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.2rem;
+  color: var(--teal-deep);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.about-stat-label {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 880px) {
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-side { position: static; }
+}
+
+/* ============ VISION (3 PILLARS) ============ */
+.vision {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 7rem var(--gutter);
+  position: relative;
+}
+.vision-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.vision .section-num { color: var(--teal-glow); }
+.vision .section-num::before { background: var(--teal-glow); }
+.vision .section-title { color: var(--cream); }
+.vision .section-title em { color: var(--teal-glow); }
+.vision .section-lead { color: rgba(246, 241, 231, 0.7); }
+.vision-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(246, 241, 231, 0.2);
+}
+.pillar {
+  padding: 3rem 2rem;
+  border-right: 1px solid rgba(246, 241, 231, 0.2);
+  position: relative;
+  transition: background 0.3s;
+}
+.pillar:last-child { border-right: none; }
+.pillar:hover { background: rgba(43, 186, 178, 0.06); }
+.pillar-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.5rem;
+  color: var(--teal-glow);
+}
+.pillar-en {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--teal-glow);
+  margin-bottom: 0.4rem;
+}
+.pillar-title {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: var(--cream);
+}
+.pillar-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(246, 241, 231, 0.78);
+}
+.pillar-num {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--teal-glow);
+  opacity: 0.6;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 880px) {
+  .vision-pillars { grid-template-columns: 1fr; }
+  .pillar { border-right: none; border-bottom: 1px solid rgba(246, 241, 231, 0.2); }
+  .pillar:last-child { border-bottom: none; }
+}
+
+/* ============ POLICY ============ */
+.policy {
+  padding: 7rem var(--gutter);
+  background: var(--paper);
+  position: relative;
+}
+.policy-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  border-top: 1px solid var(--line-strong);
+}
+.policy-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 2fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+  transition: padding 0.3s;
+}
+.policy-item:hover { padding-left: 1.2rem; }
+.policy-num {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--teal-deep);
+  line-height: 1;
+}
+.policy-title-block h3 {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+.policy-tag {
+  display: inline-block;
+  font-family: var(--font-body-en);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  background: rgba(43, 186, 178, 0.12);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+}
+.policy-body p {
+  color: var(--ink-soft);
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+.policy-body p:last-child { margin-bottom: 0; }
+.policy-body strong {
+  color: var(--ink);
+  font-weight: 700;
+  background: linear-gradient(transparent 60%, rgba(95, 216, 196, 0.4) 60%);
+  padding: 0 2px;
+}
+
+@media (max-width: 880px) {
+  .policy-item { grid-template-columns: 1fr; gap: 0.8rem; padding: 2rem 0; }
+  .policy-num { font-size: 1.8rem; }
+}
+
+/* ============ FIELD (PHOTO STORIES) ============ */
+.field {
+  background: var(--cream);
+  padding: 7rem var(--gutter);
+}
+.field-inner { max-width: var(--max); margin: 0 auto; }
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.field-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  cursor: pointer;
+}
+.field-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.field-card:hover .field-card-img { transform: scale(1.05); }
+.field-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(12, 22, 24, 0.92) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  color: var(--cream);
+}
+.field-card-cat {
+  font-family: var(--font-body-en);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-glow);
+  margin-bottom: 0.5rem;
+}
+.field-card-title {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.field-card-1 { grid-column: span 7; aspect-ratio: 16/10; }
+.field-card-2 { grid-column: span 5; aspect-ratio: 4/5; }
+.field-card-3 { grid-column: span 4; aspect-ratio: 3/4; }
+.field-card-4 { grid-column: span 4; aspect-ratio: 3/4; }
+.field-card-5 { grid-column: span 4; aspect-ratio: 3/4; }
+
+@media (max-width: 880px) {
+  .field-grid { grid-template-columns: 1fr; }
+  .field-card-1, .field-card-2, .field-card-3, .field-card-4, .field-card-5 {
+    grid-column: span 1;
+    aspect-ratio: 4/3;
+  }
+}
+
+/* ============ ENDORSEMENT ============ */
+.endorse {
+  background: var(--paper);
+  padding: 7rem var(--gutter);
+}
+.endorse-inner { max-width: var(--max); margin: 0 auto; }
+.endorse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.endorse-img {
+  position: relative;
+}
+.endorse-img img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  filter: contrast(1.05);
+}
+.endorse-img::after {
+  content: '';
+  position: absolute;
+  bottom: -12px; right: -12px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--teal-deep);
+  z-index: -1;
+}
+.endorse-content {
+  padding: 0 1rem;
+}
+.endorse-quote {
+  font-family: var(--font-display-zh);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 2rem;
+  color: var(--ink);
+}
+.endorse-quote::before {
+  content: '"';
+  font-family: var(--font-display-en);
+  font-size: 5rem;
+  color: var(--teal-bright);
+  line-height: 0;
+  position: relative;
+  top: 0.5rem;
+  margin-right: 0.3rem;
+}
+.endorse-content p {
+  color: var(--ink-soft);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 880px) {
+  .endorse-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .endorse-quote { font-size: 1.5rem; }
+}
+
+/* ============ PROFILE TABLE ============ */
+.profile {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 7rem var(--gutter);
+}
+.profile-inner { max-width: var(--max); margin: 0 auto; }
+.profile .section-num { color: var(--teal-glow); }
+.profile .section-num::before { background: var(--teal-glow); }
+.profile .section-title { color: var(--cream); }
+.profile .section-title em { color: var(--teal-glow); }
+.profile-table {
+  margin-top: 3rem;
+  border-top: 1px solid rgba(246, 241, 231, 0.18);
+}
+.profile-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(246, 241, 231, 0.12);
+  align-items: baseline;
+}
+.profile-key {
+  font-family: var(--font-body-en);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-glow);
+}
+.profile-key span {
+  display: block;
+  font-family: var(--font-body-zh);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  color: rgba(246, 241, 231, 0.6);
+  margin-top: 0.2rem;
+}
+.profile-val {
+  font-family: var(--font-display-zh);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.profile-val strong { font-weight: 700; }
+.profile-val small {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgba(246, 241, 231, 0.6);
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 880px) {
+  .profile-row { grid-template-columns: 1fr; gap: 0.4rem; padding: 1.2rem 0; }
+  .profile-val { font-size: 1.02rem; }
+}
+
+/* ============ CTA CONTACT ============ */
+.contact {
+  background: var(--cream);
+  padding: 7rem var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.contact-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--line-strong);
+}
+.channel {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.2s;
+}
+.channel:hover { padding-left: 0.8rem; background: rgba(43, 186, 178, 0.04); }
+.channel-label {
+  font-family: var(--font-body-en);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+}
+.channel-value {
+  font-family: var(--font-display-zh);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.channel-arrow {
+  color: var(--teal-deep);
+  transition: transform 0.2s;
+}
+.channel:hover .channel-arrow { transform: translateX(4px); }
+
+.contact-form {
+  background: var(--paper);
+  padding: 2.5rem;
+  border: 1px solid var(--line-strong);
+}
+.form-title {
+  font-family: var(--font-display-zh);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+.form-sub {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-field-full { grid-column: 1 / -1; }
+.form-field label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-family: var(--font-body-en);
+}
+.form-field input, .form-field select, .form-field textarea {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+  font-family: var(--font-body-zh);
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition: border-color 0.2s;
+}
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
+  outline: none;
+  border-color: var(--teal-deep);
+}
+.form-field textarea { resize: vertical; min-height: 110px; }
+.form-submit {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--ink);
+  color: var(--cream);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+.form-submit:hover {
+  background: var(--teal-deep);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 880px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .channel { grid-template-columns: 100px 1fr; }
+  .channel-arrow { display: none; }
+}
+
+/* ============ CLOSING CTA ============ */
+.closing {
+  background: var(--teal-deep);
+  color: var(--cream);
+  padding: 8rem var(--gutter);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.closing::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(95, 216, 196, 0.18), transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(184, 138, 62, 0.1), transparent 50%);
+}
+.closing-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.closing-eyebrow {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--teal-glow);
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+.closing-title {
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+.closing-title em {
+  font-style: italic;
+  color: var(--teal-glow);
+  font-weight: 700;
+}
+.closing-sub {
+  font-family: var(--font-display-zh);
+  font-size: 1.2rem;
+  color: rgba(246, 241, 231, 0.85);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.closing-name {
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 0.4em;
+  text-indent: 0.4em;
+  color: var(--cream);
+  border-top: 1px solid rgba(246, 241, 231, 0.3);
+  border-bottom: 1px solid rgba(246, 241, 231, 0.3);
+  padding: 1.2rem 0;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.closing-meta {
+  font-family: var(--font-body-en);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(246, 241, 231, 0.65);
+  margin-top: 1.5rem;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: var(--ink);
+  color: rgba(246, 241, 231, 0.7);
+  padding: 4rem var(--gutter) 2rem;
+}
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(246, 241, 231, 0.15);
+}
+.footer-brand h3 {
+  font-family: var(--font-display-zh);
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+.footer-brand-en {
+  font-family: var(--font-display-en);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--teal-glow);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.1em;
+}
+.footer-brand p { font-size: 0.92rem; line-height: 1.7; max-width: 380px; }
+.footer-col h4 {
+  font-family: var(--font-body-en);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal-glow);
+  margin-bottom: 1rem;
+}
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer-col a:hover { color: var(--cream); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 0.78rem;
+  color: rgba(246, 241, 231, 0.5);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-disclaimer {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(246, 241, 231, 0.05);
+  border-left: 2px solid var(--gold);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: rgba(246, 241, 231, 0.6);
+}
+
+@media (max-width: 880px) {
+  .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a href="#top" class="nav-brand">
+    <span class="nav-brand-mark">立</span>
+    <span>董立凱 ・ DONG LI-KAI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">認識立凱</a></li>
+    <li><a href="#vision">核心理念</a></li>
+    <li><a href="#policy">政見規劃</a></li>
+    <li><a href="#field">服務足跡</a></li>
+    <li><a href="#contact">聯絡服務</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">支持立凱 →</a>
+  <button class="nav-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      2026 ELECTION ・ CHANGHUA CITY ・ DISTRICT 3
+    </div>
+    <h1>
+      北區升級<br>
+      <span class="accent">立凱出擊</span>
+    </h1>
+    <p class="hero-tagline">
+      From the heart, an action-driven voice for North Changhua.<br>
+      從「心」出發，做北區的行動派。
+    </p>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Position</div>
+        <div class="hero-meta-value">市民代表</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">District</div>
+        <div class="hero-meta-value">北區・第三選區</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-label">Party</div>
+        <div class="hero-meta-value">台灣民眾黨</div>
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#policy" class="btn-primary">
+        看政見規劃 <span class="btn-arrow">→</span>
+      </a>
+      <a href="#contact" class="btn-secondary">
+        加入支持 <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-portrait">
+    <div class="hero-portrait-stamp">
+      2026<br>
+      彰化北區
+    </div>
+    <div class="hero-portrait-frame">
+      <img src="images/portrait.png" alt="董立凱形象照">
+    </div>
+    <div class="hero-portrait-tag">
+      <div class="hero-portrait-tag-num">35</div>
+      <div class="hero-portrait-tag-label">YEARS YOUNG ・ ENFP</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">活力北區 <span class="marquee-star">✦</span> 永續共榮 <span class="marquee-star">✦</span> 行得安全 <span class="marquee-star">✦</span> 住得安心 <span class="marquee-star">✦</span> 對毛孩友善 <span class="marquee-star">✦</span> 對長者尊榮 <span class="marquee-star">✦</span> 改善市容 <span class="marquee-star">✦</span> 增加綠意 <span class="marquee-star">✦</span></span>
+    <span class="marquee-item">活力北區 <span class="marquee-star">✦</span> 永續共榮 <span class="marquee-star">✦</span> 行得安全 <span class="marquee-star">✦</span> 住得安心 <span class="marquee-star">✦</span> 對毛孩友善 <span class="marquee-star">✦</span> 對長者尊榮 <span class="marquee-star">✦</span> 改善市容 <span class="marquee-star">✦</span> 增加綠意 <span class="marquee-star">✦</span></span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="section-num reveal">01 ／ ABOUT — 認識立凱</div>
+    <div class="about-grid">
+      <div class="about-side reveal">
+        <h2 class="section-title">熱情、實在、<br><em>是您的鄰家好友</em></h2>
+        <div class="about-quote">
+          服務基層不是冷冰冰的政治工作，而是像鄰家好友般的陪伴。
+        </div>
+        <div class="about-attribution">
+          <div class="about-sig">
+            <strong>董立凱</strong>
+            <span>Dong Li-Kai ／ ENFP・The Campaigner</span>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num">35</div>
+            <div class="about-stat-label">壯年世代<br>1990 年生・北區子弟</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">100%</div>
+            <div class="about-stat-label">無犯罪紀錄<br>不菸・不酒・不賭</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">2x</div>
+            <div class="about-stat-label">屏科大水保系<br>學士・研究所</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">∞</div>
+            <div class="about-stat-label">在地深耕<br>用行動陪伴鄉親</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-body reveal">
+        <p>立凱是一個個性隨和、天生樂觀的人。在 MBTI 性格測驗中，是典型的 <strong>ENFP「競選者」人格</strong>，也就是大家口中充滿能量的「快樂小狗」。一顆熱情、積極且富有同理心的心，樂於社交、善於調解氣氛——這份對細節的堅持與對鄉親情緒的感知，讓立凱能第一線察覺里民的需求，用最積極的行動力解決問題。</p>
+
+        <p>成長於一個平凡而溫馨的普通家庭，雙親健在，家中三兄弟排行第二，上有哥哥、下有弟弟。與兄弟及父母之間感情深厚，這種和睦的家庭氛圍，培養了立凱包容、耐心的好脾氣，也讓他<strong>深知一個安居樂業的環境對每個家庭有多麼重要</strong>。</p>
+
+        <p>畢業於國立屏東科技大學水土保持學系，並完成研究所階段學業。曾任恒達企業有限公司開發暨行銷經理三年（2022–2025），具備跨領域實務歷練。現任<strong>台灣民眾黨彰化縣黨部彰化市北區主任</strong>，從基層黨務做起，走遍北區每個巷弄，傾聽長輩的需要，接住青年的不安。</p>
+
+        <p>在經濟狀況上，立凱自給自足、生活踏實。生活中嚴守自律，<strong>不菸、不酒、不賭，沒有任何不良嗜好</strong>。平時最大的休閒僅是偶爾與好友打點小麻將聯絡感情，這是放鬆身心的方式，也展現了平易近人、重視情誼的一面。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISION ============ -->
+<section class="vision" id="vision">
+  <div class="vision-inner">
+    <div class="section-num reveal">02 ／ MANIFESTO — 核心理念</div>
+    <h2 class="section-title reveal">活力北區 ・<br><em>永續共榮</em></h2>
+    <p class="section-lead reveal">
+      北區雖然擁有深厚的文化底蘊，但隨著人口結構改變，基礎設施與生活品質正面臨瓶頸。我不願看著家鄉停滯，希望發揮「快樂小狗」的熱忱與同理心，用三個核心理念，把北區打造為一個更溫暖、更宜居的現代城市。
+    </p>
+
+    <div class="vision-pillars">
+      <div class="pillar reveal">
+        <div class="pillar-num">01 ／ S</div>
+        <svg class="pillar-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 6 L54 16 V32 C54 44 44 54 32 58 C20 54 10 44 10 32 V16 Z"/>
+          <path d="M22 32 L29 39 L42 26"/>
+        </svg>
+        <div class="pillar-en">SAFETY</div>
+        <h3 class="pillar-title">安 全</h3>
+        <p class="pillar-desc">行得安全、住得安心。針對北區學區（大成國小、彰師大周邊）與老舊巷弄，落實「人本交通」，增設標線型人行道與路口照明。讓每位北區的孩子、長輩、行人，都能有尊嚴地走在自己的家鄉。</p>
+      </div>
+
+      <div class="pillar reveal">
+        <div class="pillar-num">02 ／ F</div>
+        <svg class="pillar-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 56 C18 46 6 36 6 24 C6 16 12 10 20 10 C24 10 28 12 32 16 C36 12 40 10 44 10 C52 10 58 16 58 24 C58 36 46 46 32 56 Z"/>
+        </svg>
+        <div class="pillar-en">FRIENDLINESS</div>
+        <h3 class="pillar-title">友 善</h3>
+        <p class="pillar-desc">對毛孩友善、對長者尊榮。北區是一個有人情味的家。打造對毛小孩友善的公共空間、強化長者照護網絡、建立鄰里情感的連結點——讓這份家的溫度，被每一位居民實際感受到。</p>
+      </div>
+
+      <div class="pillar reveal">
+        <div class="pillar-num">03 ／ S</div>
+        <svg class="pillar-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 14 L50 50 M50 14 L14 50"/>
+          <path d="M32 8 V20 M32 44 V56 M8 32 H20 M44 32 H56" opacity="0.5"/>
+        </svg>
+        <div class="pillar-en">SIMPLIFICATION</div>
+        <h3 class="pillar-title">減 法</h3>
+        <p class="pillar-desc">改善市容、去除雜亂、增加綠意。以智慧垃圾桶、戶外吸菸亭等具體行動，把多餘的雜亂從街道「減法」掉，把綠意、整潔、與舒適的城市感受還給北區。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POLICY ============ -->
+<section class="policy" id="policy">
+  <div class="policy-inner">
+    <div class="section-num reveal">03 ／ POLICY — 政見規劃</div>
+    <h2 class="section-title reveal">具體承諾，<br><em>送進代表會</em></h2>
+    <p class="section-lead reveal">
+      不是空泛口號，而是基於北區的真實需求，提出能在四年任期內推動、可被檢驗的具體行動方案。
+    </p>
+
+    <div class="policy-list">
+      <article class="policy-item reveal">
+        <div class="policy-num">01</div>
+        <div class="policy-title-block">
+          <h3>交通安全與人行道優化</h3>
+          <span class="policy-tag">SAFETY ／ TRAFFIC</span>
+        </div>
+        <div class="policy-body">
+          <p>針對北區學區（如<strong>大成國小、彰師大周邊</strong>）與老舊巷弄，爭取落實「人本交通」，增設標線型人行道及路口照明。讓孩子上下學、長輩上市場，都能在安全的環境中安心步行。</p>
+          <p>此外，將持續關注<strong>民生地下道等通行熱點</strong>的用路安全議題，從第一線實地會勘做起。</p>
+        </div>
+      </article>
+
+      <article class="policy-item reveal">
+        <div class="policy-num">02</div>
+        <div class="policy-title-block">
+          <h3>智慧垃圾桶設置</h3>
+          <span class="policy-tag">CITYSCAPE ／ ENV</span>
+        </div>
+        <div class="policy-body">
+          <p>在主要公園與人流聚集點設置美觀、具分類功能的<strong>智慧垃圾桶</strong>，減少亂丟垃圾，提升市容整潔度，也讓資源回收更有效率。</p>
+          <p>把先進城市的解方，落實到北區每一條主要街道。</p>
+        </div>
+      </article>
+
+      <article class="policy-item reveal">
+        <div class="policy-num">03</div>
+        <div class="policy-title-block">
+          <h3>戶外吸菸亭規劃</h3>
+          <span class="policy-tag">PUBLIC HEALTH</span>
+        </div>
+        <div class="policy-body">
+          <p>參考國外經驗，在開放空間設置<strong>透明、通風的「戶外吸菸亭」</strong>，落實菸灰不落地，保障非吸菸者的健康，也給吸菸者一個有尊嚴的空間。</p>
+          <p>用<strong>「減法」</strong>取代對立——讓兩造的權益都能被照顧到。</p>
+        </div>
+      </article>
+
+      <article class="policy-item reveal">
+        <div class="policy-num">04</div>
+        <div class="policy-title-block">
+          <h3>友善毛孩與長者照護</h3>
+          <span class="policy-tag">FRIENDLINESS</span>
+        </div>
+        <div class="policy-body">
+          <p>推動<strong>毛孩友善公共空間</strong>，包括公園的寵物休憩區、便溺處理設施。同時關注高齡社會議題，串聯北區里鄰，建立<strong>長者支持網絡</strong>，讓每位長輩在家門口就能被照顧。</p>
+        </div>
+      </article>
+
+      <article class="policy-item reveal">
+        <div class="policy-num">05</div>
+        <div class="policy-title-block">
+          <h3>市容微整型 ・ 綠化升級</h3>
+          <span class="policy-tag">URBAN DESIGN</span>
+        </div>
+        <div class="policy-body">
+          <p>從去除電線雜亂、整理招牌、增加騎樓綠植——把<strong>「減法」哲學</strong>落實到每一條街。北區不需要更多的東西，需要的是把該有的好好整理好。</p>
+        </div>
+      </article>
+
+      <article class="policy-item reveal">
+        <div class="policy-num">06</div>
+        <div class="policy-title-block">
+          <h3>第一線陳情服務</h3>
+          <span class="policy-tag">FIELD WORK</span>
+        </div>
+        <div class="policy-body">
+          <p>承襲<strong>吳韋達議員服務團隊</strong>的基層精神，從「幫民眾牽摩托車」這種小事做起，用最積極的行動力解決問題。每一件陳情都會建檔、追蹤、回覆——民代不是高高在上，是<strong>鄉親家門口的那個人</strong>。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIELD (PHOTO STORIES) ============ -->
+<section class="field" id="field">
+  <div class="field-inner">
+    <div class="section-num reveal">04 ／ FIELD NOTES — 服務足跡</div>
+    <h2 class="section-title reveal">不是口號，<br><em>是日常的行動</em></h2>
+    <p class="section-lead reveal">
+      從大甲媽祖繞境的香火相伴、到老巷口幫民眾牽摩托車，從黨主席帶隊的造勢、到第一線的交通會勘——立凱的競選之路，從來不在冷氣房裡。
+    </p>
+
+    <div class="field-grid">
+      <div class="field-card field-card-1 reveal">
+        <img src="images/leaders.jpg" alt="董立凱與民眾黨主席合體" class="field-card-img">
+        <div class="field-card-overlay">
+          <div class="field-card-cat">PARTY UNITY ／ 黨團合作</div>
+          <div class="field-card-title">與兩位主席合體，展現團結氣勢</div>
+        </div>
+      </div>
+
+      <div class="field-card field-card-2 reveal">
+        <img src="images/traffic.jpg" alt="董立凱守護民生地下道用路安全" class="field-card-img">
+        <div class="field-card-overlay">
+          <div class="field-card-cat">FIELD WORK ／ 實地會勘</div>
+          <div class="field-card-title">守護民生地下道用路安全</div>
+        </div>
+      </div>
+
+      <div class="field-card field-card-3 reveal">
+        <img src="images/mazu.jpg" alt="大甲媽祖繞境彰化與神同行" class="field-card-img">
+        <div class="field-card-overlay">
+          <div class="field-card-cat">CULTURE ／ 在地信仰</div>
+          <div class="field-card-title">大甲媽祖繞境，與神同行</div>
+        </div>
+      </div>
+
+      <div class="field-card field-card-4 reveal">
+        <img src="images/scooter.jpg" alt="董立凱幫民眾牽摩托車" class="field-card-img">
+        <div class="field-card-overlay">
+          <div class="field-card-cat">EVERYDAY SERVICE ／ 日常服務</div>
+          <div class="field-card-title">幫民眾牽摩托車，從小事做起</div>
+        </div>
+      </div>
+
+      <div class="field-card field-card-5 reveal">
+        <img src="images/team.jpg" alt="與彰化民眾黨團隊" class="field-card-img">
+        <div class="field-card-overlay">
+          <div class="field-card-cat">TEAM ／ 彰化團隊</div>
+          <div class="field-card-title">和彰化民眾黨團隊，一起拼</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENDORSE ============ -->
+<section class="endorse">
+  <div class="endorse-inner">
+    <div class="endorse-grid">
+      <div class="endorse-img reveal">
+        <img src="images/leaders.jpg" alt="與民眾黨領袖合影">
+      </div>
+      <div class="endorse-content reveal">
+        <div class="section-num">05 ／ ENDORSEMENT — 黨團力挺</div>
+        <h2 class="endorse-quote">
+          第三勢力在彰化北區，需要一位真正願意走進巷弄、聽見鄉親心聲的人。
+        </h2>
+        <p>立凱與彰化縣議員<strong>吳韋達</strong>長期合作，並承襲其服務團隊的基層精神。從柯文哲主席、黃國昌主席的造勢場合，到地方廟宇、夜市掃街，立凱始終跟黨中央、地方議員站在一起。</p>
+        <p>2026 年，是民眾黨在<strong>地方扎根的關鍵一役</strong>。立凱代表的不只是個人，而是整個民眾黨在彰化北區，對「正常政治、踏實服務」的承諾。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFILE ============ -->
+<section class="profile">
+  <div class="profile-inner">
+    <div class="section-num reveal">06 ／ DOSSIER — 候選人資料</div>
+    <h2 class="section-title reveal">公開、透明，<br><em>每一筆資料都禁得起檢驗</em></h2>
+
+    <div class="profile-table">
+      <div class="profile-row reveal">
+        <div class="profile-key">NAME ／ 姓名 <span>選舉登記姓名</span></div>
+        <div class="profile-val"><strong>董 立 凱</strong> ・ Dong Li-Kai</div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">BIRTH ／ 出生 <span>戶籍登記</span></div>
+        <div class="profile-val">民國 79 年 6 月 12 日（西元 1990）<small>彰化縣彰化市・本市秀傳紀念醫院出生</small></div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">PARTY ／ 黨籍 <span>政治參與</span></div>
+        <div class="profile-val">台灣民眾黨黨員<small>現任：台灣民眾黨彰化縣黨部 ・ 彰化市北區主任</small></div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">EDU ／ 學歷 <span>正式學歷</span></div>
+        <div class="profile-val">國立屏東科技大學 ・ 工學院 水土保持學系 學士<small>97/09 – 101/06 ・ 屏科大字第 1462 號學士學位證書</small></div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">CAREER ／ 經歷 <span>工作歷練</span></div>
+        <div class="profile-val">恒達企業有限公司 ・ 開發暨行銷經理<small>2022/04 – 2025/04 ・ 三年跨領域實務</small></div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">RECORD ／ 紀錄 <span>無刑事紀錄</span></div>
+        <div class="profile-val">無犯罪紀錄<small>彰化縣警察局核發 ・ 文號 N00_1150209_A000045 ・ 115/02/09</small></div>
+      </div>
+      <div class="profile-row reveal">
+        <div class="profile-key">RUN ／ 參選 <span>首次參選公職</span></div>
+        <div class="profile-val">2026 彰化市市民代表 ・ 第三選區（北區）<small>台灣民眾黨提名 ・ 完成中央黨部登記</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-num">07 ／ CONTACT — 聯絡服務</div>
+        <h2 class="section-title">有事，<br><em>直接說</em></h2>
+        <p class="section-lead">
+          無論是交通、長照、毛孩、市容，或是任何北區鄉親的生活疑難——電話、Email、社群私訊都歡迎。每一件陳情都會建檔、追蹤、回覆。
+        </p>
+
+        <div class="contact-channels">
+          <a href="tel:0986999612" class="channel">
+            <div class="channel-label">PHONE</div>
+            <div class="channel-value">0986-999-612</div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <a href="mailto:jack999612@gmail.com" class="channel">
+            <div class="channel-label">EMAIL</div>
+            <div class="channel-value">jack999612@gmail.com</div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <div class="channel">
+            <div class="channel-label">DISTRICT</div>
+            <div class="channel-value">彰化市第三選區（北區）</div>
+            <div class="channel-arrow">📍</div>
+          </div>
+          <div class="channel">
+            <div class="channel-label">PARTY</div>
+            <div class="channel-value">台灣民眾黨 ・ 彰化縣黨部</div>
+            <div class="channel-arrow">眾</div>
+          </div>
+          <div class="channel">
+            <div class="channel-label">FB ／ IG</div>
+            <div class="channel-value">董立凱（社群連結籌備中）</div>
+            <div class="channel-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3 class="form-title">線上陳情 ／ 服務申請</h3>
+        <div class="form-sub">SERVICE REQUEST FORM</div>
+
+        <form onsubmit="event.preventDefault(); alert('感謝您的支持！正式上線後將串接 EmailJS 或 Google Form 收件系統。');">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">姓名 NAME</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">電話 PHONE</label>
+              <input type="tel" id="phone" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field form-field-full">
+              <label for="area">居住區域 AREA</label>
+              <select id="area">
+                <option>彰化市北區（卦山里・公園里・中山里 等）</option>
+                <option>彰化市中區</option>
+                <option>彰化市南區</option>
+                <option>彰化市東區</option>
+                <option>彰化縣其他鄉鎮市</option>
+                <option>非彰化縣</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field form-field-full">
+              <label for="topic">議題類別 CATEGORY</label>
+              <select id="topic">
+                <option>交通 ／ 道路 ／ 人行道</option>
+                <option>市容 ／ 環境清潔</option>
+                <option>毛孩友善 ／ 流浪動物</option>
+                <option>長者照護 ／ 鄰里支持</option>
+                <option>智慧垃圾桶 ／ 公共設施</option>
+                <option>戶外吸菸亭 ／ 公衛議題</option>
+                <option>其他</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field form-field-full">
+              <label for="msg">議題說明 MESSAGE</label>
+              <textarea id="msg" placeholder="請描述您遇到的狀況、地點與期待..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit">送出陳情 →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing">
+  <div class="closing-inner">
+    <div class="closing-eyebrow">YOUR BALLOT ／ 您的選票 ・ 2026</div>
+    <h2 class="closing-title">
+      把這一票，<br>
+      交給<em>願意走進巷弄</em>的人。
+    </h2>
+    <p class="closing-sub">
+      北區升級，立凱出擊。<br>
+      用「快樂小狗」的熱忱，做最踏實的行動派。
+    </p>
+    <div class="closing-name">董 立 凱</div>
+    <div class="closing-meta">DONG LI-KAI ／ CHANGHUA CITY DISTRICT 3 ／ 2026</div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>董立凱</h3>
+        <div class="footer-brand-en">DONG LI-KAI ／ CHANGHUA CITY</div>
+        <p>2026 年彰化市市民代表第三選區（北區）參選人。台灣民眾黨提名・以「活力北區・永續共榮」為核心理念，落實安全、友善、減法三大行動方向。</p>
+      </div>
+      <div class="footer-col">
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="#about">認識立凱</a></li>
+          <li><a href="#vision">核心理念</a></li>
+          <li><a href="#policy">政見規劃</a></li>
+          <li><a href="#field">服務足跡</a></li>
+          <li><a href="#contact">聯絡服務</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT</h4>
+        <ul>
+          <li>電話：0986-999-612</li>
+          <li>Email：jack999612@gmail.com</li>
+          <li>選區：彰化市・第三選區・北區</li>
+          <li>政黨：台灣民眾黨</li>
+          <li>FB / IG / YT：籌備中</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-disclaimer">
+      ⚠ 本網站為「董立凱競選辦公室」依《公職人員選舉罷免法》及《政治獻金法》設置之競選網站。網站內容若含廣告，依法刊登廣告刊登者：董立凱競選辦公室。本版本為網站原型（PROTOTYPE），所有候選人簡介、政見細節、聯絡資料皆依候選人提供之競選資料表撰寫，正式上線前須由候選人本人逐項審閱、修改、確認後方得公開使用。
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 董立凱競選辦公室 ・ 台灣民眾黨彰化市市民代表第三選區提名候選人</div>
+      <div>BEIQU ・ CHANGHUA CITY ・ 2026</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -80px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Nav blur on scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    nav.style.boxShadow = '0 4px 30px -10px rgba(20, 22, 24, 0.15)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
